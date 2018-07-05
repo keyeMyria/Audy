@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		530990C81F55168700D9FE40 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530990C51F55168700D9FE40 /* SpotifyAudioPlayback.framework */; };
+		530990C91F55168700D9FE40 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530990C61F55168700D9FE40 /* SpotifyAuthentication.framework */; };
+		530990CA1F55168700D9FE40 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530990C71F55168700D9FE40 /* SpotifyMetadata.framework */; };
+		530E0B001F58F16A00764A36 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E0AFF1F58F16A00764A36 /* TrackCell.swift */; };
+		530E0B021F5905B600764A36 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E0B011F5905B600764A36 /* PlayerController.swift */; };
+		530E0B041F590B0700764A36 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E0B031F590B0700764A36 /* Player.swift */; };
+		530E0B061F59669800764A36 /* Extensions+AVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E0B051F59669800764A36 /* Extensions+AVPlayer.swift */; };
+		530E0B081F596E7400764A36 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 530E0B071F596E7400764A36 /* PlayButton.swift */; };
+		534B98041F5A9F2700894519 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534B98031F5A9F2700894519 /* WatchManager.swift */; };
+		534F727C1F5A49AB00CC3FCC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 534F727A1F5A49AB00CC3FCC /* Interface.storyboard */; };
+		534F727E1F5A49AB00CC3FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534F727D1F5A49AB00CC3FCC /* Assets.xcassets */; };
+		534F72851F5A49AB00CC3FCC /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 534F72841F5A49AB00CC3FCC /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		534F728A1F5A49AB00CC3FCC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F72891F5A49AB00CC3FCC /* InterfaceController.swift */; };
+		534F728C1F5A49AB00CC3FCC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F728B1F5A49AB00CC3FCC /* ExtensionDelegate.swift */; };
+		534F728E1F5A49AB00CC3FCC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F728D1F5A49AB00CC3FCC /* ComplicationController.swift */; };
+		534F72901F5A49AB00CC3FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 534F728F1F5A49AB00CC3FCC /* Assets.xcassets */; };
+		534F72941F5A49AB00CC3FCC /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 534F72781F5A49AB00CC3FCC /* Watch.app */; };
+		536CB5231F58C8830089E0A3 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CB5221F58C8830089E0A3 /* MusicLibrary.swift */; };
+		536ECCF21F54E03B00B16E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536ECCF11F54E03B00B16E47 /* AppDelegate.swift */; };
+		536ECCF41F54E03B00B16E47 /* AccountsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536ECCF31F54E03B00B16E47 /* AccountsController.swift */; };
+		536ECCF91F54E03B00B16E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536ECCF81F54E03B00B16E47 /* Assets.xcassets */; };
+		536ECCFC1F54E03B00B16E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536ECCFA1F54E03B00B16E47 /* LaunchScreen.storyboard */; };
+		5396F1361F5776AE00DD105E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F1351F5776AE00DD105E /* NavigationController.swift */; };
+		5396F1381F577F5B00DD105E /* SoundcloudLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F1371F577F5B00DD105E /* SoundcloudLoginController.swift */; };
+		5396F13A1F578B2800DD105E /* SoundcloudLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F1391F578B2800DD105E /* SoundcloudLoginButton.swift */; };
+		5396F1431F57A46A00DD105E /* Spotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F1421F57A46A00DD105E /* Spotify.swift */; };
+		5396F1461F57ECC300DD105E /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F1451F57ECC300DD105E /* RootController.swift */; };
+		5396F1481F57EF2600DD105E /* LibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396F1471F57EF2600DD105E /* LibraryController.swift */; };
+		53B3F2771F5A54DE007F14A9 /* LibraryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3F2761F5A54DE007F14A9 /* LibraryInterfaceController.swift */; };
+		53B3F2791F5A55E8007F14A9 /* NavigationRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3F2781F5A55E8007F14A9 /* NavigationRow.swift */; };
+		53B3F27B1F5A603C007F14A9 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3F27A1F5A603C007F14A9 /* Track.swift */; };
+		53B3F27C1F5A603C007F14A9 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B3F27A1F5A603C007F14A9 /* Track.swift */; };
+		53B810C51F572DF8000DC4E4 /* Soundcloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B810C41F572DF8000DC4E4 /* Soundcloud.swift */; };
+		53B810CB1F573CB9000DC4E4 /* Extensions+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B810CA1F573CB9000DC4E4 /* Extensions+URL.swift */; };
+		53C122BE1F566D9F001EADB1 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C122BD1F566D9F001EADB1 /* PageController.swift */; };
+		53C122C21F5670D9001EADB1 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C122C11F5670D9001EADB1 /* LoginButton.swift */; };
+		53C122C41F567674001EADB1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C122C31F567674001EADB1 /* Constants.swift */; };
+		53DEACDD20AD8CA400599FB7 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DEACDC20AD8CA400599FB7 /* Secrets.swift */; };
+		53F54CCE1F5A81CF00972211 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F54CCD1F5A81CF00972211 /* MusicLibrary.swift */; };
+		53F54CD01F5A871100972211 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F54CCF1F5A871100972211 /* WatchManager.swift */; };
+		53F54CD21F5A8BD300972211 /* TrackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F54CD11F5A8BD300972211 /* TrackRow.swift */; };
+		9885805618DC8ACCD6C9FF70 /* Pods_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF15276BD32556B5C0DAB3AC /* Pods_Watch_Extension.framework */; };
+		CEAE14CF82F03C074AF1929B /* Pods_Audy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80877F1AFCFA1020908E5592 /* Pods_Audy.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		534F72861F5A49AB00CC3FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536ECCE61F54E03B00B16E47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 534F72831F5A49AB00CC3FCC;
+			remoteInfo = "Watch Extension";
+		};
+		534F72921F5A49AB00CC3FCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536ECCE61F54E03B00B16E47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 534F72771F5A49AB00CC3FCC;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		534F729A1F5A49AB00CC3FCC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				534F72851F5A49AB00CC3FCC /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534F729C1F5A49AB00CC3FCC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				534F72941F5A49AB00CC3FCC /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27C2725BF563E011822EA979 /* Pods-Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		45C774ECE3F3B7340570EACB /* Pods-Audy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Audy/Pods-Audy.release.xcconfig"; sourceTree = "<group>"; };
+		51DA6E6D8A251E8BD024679B /* Pods-Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		530990C51F55168700D9FE40 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		530990C61F55168700D9FE40 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		530990C71F55168700D9FE40 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
+		530990CD1F5516EA00D9FE40 /* Audy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Audy-Bridging-Header.h"; sourceTree = "<group>"; };
+		530E0AFF1F58F16A00764A36 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		530E0B011F5905B600764A36 /* PlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		530E0B031F590B0700764A36 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		530E0B051F59669800764A36 /* Extensions+AVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+AVPlayer.swift"; sourceTree = "<group>"; };
+		530E0B071F596E7400764A36 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		534B98031F5A9F2700894519 /* WatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		534F72781F5A49AB00CC3FCC /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		534F727B1F5A49AB00CC3FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		534F727D1F5A49AB00CC3FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		534F727F1F5A49AB00CC3FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534F72841F5A49AB00CC3FCC /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		534F72891F5A49AB00CC3FCC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		534F728B1F5A49AB00CC3FCC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		534F728D1F5A49AB00CC3FCC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		534F728F1F5A49AB00CC3FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		534F72911F5A49AB00CC3FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536CB5221F58C8830089E0A3 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		536ECCEE1F54E03B00B16E47 /* Audy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		536ECCF11F54E03B00B16E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		536ECCF31F54E03B00B16E47 /* AccountsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsController.swift; sourceTree = "<group>"; };
+		536ECCF81F54E03B00B16E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		536ECCFB1F54E03B00B16E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		536ECCFD1F54E03B00B16E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5396F1351F5776AE00DD105E /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		5396F1371F577F5B00DD105E /* SoundcloudLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundcloudLoginController.swift; sourceTree = "<group>"; };
+		5396F1391F578B2800DD105E /* SoundcloudLoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundcloudLoginButton.swift; sourceTree = "<group>"; };
+		5396F1421F57A46A00DD105E /* Spotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spotify.swift; sourceTree = "<group>"; };
+		5396F1451F57ECC300DD105E /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		5396F1471F57EF2600DD105E /* LibraryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryController.swift; sourceTree = "<group>"; };
+		53B3F2761F5A54DE007F14A9 /* LibraryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryInterfaceController.swift; sourceTree = "<group>"; };
+		53B3F2781F5A55E8007F14A9 /* NavigationRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRow.swift; sourceTree = "<group>"; };
+		53B3F27A1F5A603C007F14A9 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		53B810C41F572DF8000DC4E4 /* Soundcloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soundcloud.swift; sourceTree = "<group>"; };
+		53B810C81F573705000DC4E4 /* Example.Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.Secrets.swift; sourceTree = "<group>"; };
+		53B810CA1F573CB9000DC4E4 /* Extensions+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+URL.swift"; sourceTree = "<group>"; };
+		53C122BD1F566D9F001EADB1 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		53C122C11F5670D9001EADB1 /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		53C122C31F567674001EADB1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		53DEACDC20AD8CA400599FB7 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		53F54CCD1F5A81CF00972211 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
+		53F54CCF1F5A871100972211 /* WatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		53F54CD11F5A8BD300972211 /* TrackRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackRow.swift; sourceTree = "<group>"; };
+		80877F1AFCFA1020908E5592 /* Pods_Audy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECA3B7C53FA26670E8F3605 /* Pods-Audy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audy/Pods-Audy.debug.xcconfig"; sourceTree = "<group>"; };
+		BF15276BD32556B5C0DAB3AC /* Pods_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		534F72811F5A49AB00CC3FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9885805618DC8ACCD6C9FF70 /* Pods_Watch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536ECCEB1F54E03B00B16E47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530990CA1F55168700D9FE40 /* SpotifyMetadata.framework in Frameworks */,
+				CEAE14CF82F03C074AF1929B /* Pods_Audy.framework in Frameworks */,
+				530990C91F55168700D9FE40 /* SpotifyAuthentication.framework in Frameworks */,
+				530990C81F55168700D9FE40 /* SpotifyAudioPlayback.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF7380F472E4B55BDBF5B313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		109ED796982A5D51BEA31A9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				530990C51F55168700D9FE40 /* SpotifyAudioPlayback.framework */,
+				530990C61F55168700D9FE40 /* SpotifyAuthentication.framework */,
+				530990C71F55168700D9FE40 /* SpotifyMetadata.framework */,
+				80877F1AFCFA1020908E5592 /* Pods_Audy.framework */,
+				BF15276BD32556B5C0DAB3AC /* Pods_Watch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A3B7491E1231F54D8B84FFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BECA3B7C53FA26670E8F3605 /* Pods-Audy.debug.xcconfig */,
+				45C774ECE3F3B7340570EACB /* Pods-Audy.release.xcconfig */,
+				51DA6E6D8A251E8BD024679B /* Pods-Watch Extension.debug.xcconfig */,
+				27C2725BF563E011822EA979 /* Pods-Watch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		530E0B091F596E7B00764A36 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				530E0B011F5905B600764A36 /* PlayerController.swift */,
+				530E0B071F596E7400764A36 /* PlayButton.swift */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		534F72791F5A49AB00CC3FCC /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				534F727A1F5A49AB00CC3FCC /* Interface.storyboard */,
+				534F727D1F5A49AB00CC3FCC /* Assets.xcassets */,
+				534F727F1F5A49AB00CC3FCC /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		534F72881F5A49AB00CC3FCC /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				534F72891F5A49AB00CC3FCC /* InterfaceController.swift */,
+				53B3F2781F5A55E8007F14A9 /* NavigationRow.swift */,
+				53F54CCD1F5A81CF00972211 /* MusicLibrary.swift */,
+				534B98031F5A9F2700894519 /* WatchManager.swift */,
+				53B3F2761F5A54DE007F14A9 /* LibraryInterfaceController.swift */,
+				53F54CD11F5A8BD300972211 /* TrackRow.swift */,
+				534F728B1F5A49AB00CC3FCC /* ExtensionDelegate.swift */,
+				534F728D1F5A49AB00CC3FCC /* ComplicationController.swift */,
+				534F728F1F5A49AB00CC3FCC /* Assets.xcassets */,
+				534F72911F5A49AB00CC3FCC /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		536ECCE51F54E03B00B16E47 = {
+			isa = PBXGroup;
+			children = (
+				536ECCF01F54E03B00B16E47 /* Audy */,
+				534F72791F5A49AB00CC3FCC /* Watch */,
+				534F72881F5A49AB00CC3FCC /* Watch Extension */,
+				536ECCEF1F54E03B00B16E47 /* Products */,
+				3A3B7491E1231F54D8B84FFE /* Pods */,
+				109ED796982A5D51BEA31A9D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		536ECCEF1F54E03B00B16E47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				536ECCEE1F54E03B00B16E47 /* Audy.app */,
+				534F72781F5A49AB00CC3FCC /* Watch.app */,
+				534F72841F5A49AB00CC3FCC /* Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		536ECCF01F54E03B00B16E47 /* Audy */ = {
+			isa = PBXGroup;
+			children = (
+				530990CD1F5516EA00D9FE40 /* Audy-Bridging-Header.h */,
+				536ECCF81F54E03B00B16E47 /* Assets.xcassets */,
+				536ECCFD1F54E03B00B16E47 /* Info.plist */,
+				536ECCF11F54E03B00B16E47 /* AppDelegate.swift */,
+				53C122C31F567674001EADB1 /* Constants.swift */,
+				53B3F27D1F5A6065007F14A9 /* Models */,
+				5396F13C1F57A36100DD105E /* Secrets */,
+				5396F13D1F57A37A00DD105E /* Navigation */,
+				5396F13F1F57A3F800DD105E /* Views */,
+				5396F1401F57A40A00DD105E /* Stores */,
+				5396F1411F57A42600DD105E /* Extensions */,
+				5396F1441F57A47500DD105E /* Storyboards */,
+			);
+			path = Audy;
+			sourceTree = "<group>";
+		};
+		5396F13B1F578B3600DD105E /* Soundcloud Login */ = {
+			isa = PBXGroup;
+			children = (
+				5396F1371F577F5B00DD105E /* SoundcloudLoginController.swift */,
+				5396F1391F578B2800DD105E /* SoundcloudLoginButton.swift */,
+			);
+			name = "Soundcloud Login";
+			sourceTree = "<group>";
+		};
+		5396F13C1F57A36100DD105E /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				53B810C81F573705000DC4E4 /* Example.Secrets.swift */,
+				53DEACDC20AD8CA400599FB7 /* Secrets.swift */,
+			);
+			name = Secrets;
+			sourceTree = "<group>";
+		};
+		5396F13D1F57A37A00DD105E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				53C122BD1F566D9F001EADB1 /* PageController.swift */,
+				5396F1351F5776AE00DD105E /* NavigationController.swift */,
+				5396F1451F57ECC300DD105E /* RootController.swift */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		5396F13E1F57A3D300DD105E /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				53C122C11F5670D9001EADB1 /* LoginButton.swift */,
+				536ECCF31F54E03B00B16E47 /* AccountsController.swift */,
+			);
+			name = Accounts;
+			sourceTree = "<group>";
+		};
+		5396F13F1F57A3F800DD105E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5396F1471F57EF2600DD105E /* LibraryController.swift */,
+				530E0AFF1F58F16A00764A36 /* TrackCell.swift */,
+				530E0B091F596E7B00764A36 /* Player */,
+				5396F13B1F578B3600DD105E /* Soundcloud Login */,
+				5396F13E1F57A3D300DD105E /* Accounts */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5396F1401F57A40A00DD105E /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				53B810C41F572DF8000DC4E4 /* Soundcloud.swift */,
+				530E0B031F590B0700764A36 /* Player.swift */,
+				536CB5221F58C8830089E0A3 /* MusicLibrary.swift */,
+				5396F1421F57A46A00DD105E /* Spotify.swift */,
+				53F54CCF1F5A871100972211 /* WatchManager.swift */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		5396F1411F57A42600DD105E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				53B810CA1F573CB9000DC4E4 /* Extensions+URL.swift */,
+				530E0B051F59669800764A36 /* Extensions+AVPlayer.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5396F1441F57A47500DD105E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				536ECCFA1F54E03B00B16E47 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		53B3F27D1F5A6065007F14A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53B3F27A1F5A603C007F14A9 /* Track.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		534F72771F5A49AB00CC3FCC /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534F729B1F5A49AB00CC3FCC /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				534F72761F5A49AB00CC3FCC /* Resources */,
+				534F729A1F5A49AB00CC3FCC /* Embed App Extensions */,
+				BF7380F472E4B55BDBF5B313 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				534F72871F5A49AB00CC3FCC /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 534F72781F5A49AB00CC3FCC /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		534F72831F5A49AB00CC3FCC /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 534F72991F5A49AB00CC3FCC /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				192C713C9EE7C09659BC49DC /* [CP] Check Pods Manifest.lock */,
+				534F72801F5A49AB00CC3FCC /* Sources */,
+				534F72811F5A49AB00CC3FCC /* Frameworks */,
+				534F72821F5A49AB00CC3FCC /* Resources */,
+				08E835044F9FD4F493F2B0FE /* [CP] Embed Pods Frameworks */,
+				630F86E6DDE5E3029FCBEA15 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 534F72841F5A49AB00CC3FCC /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		536ECCED1F54E03B00B16E47 /* Audy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536ECD001F54E03B00B16E47 /* Build configuration list for PBXNativeTarget "Audy" */;
+			buildPhases = (
+				FA0A3FB4241DC4876B532F0D /* [CP] Check Pods Manifest.lock */,
+				536ECCEA1F54E03B00B16E47 /* Sources */,
+				536ECCEB1F54E03B00B16E47 /* Frameworks */,
+				536ECCEC1F54E03B00B16E47 /* Resources */,
+				AD561A5E894B72372AB65E28 /* [CP] Embed Pods Frameworks */,
+				953B3C3AC620FB48A29B8661 /* [CP] Copy Pods Resources */,
+				534F729C1F5A49AB00CC3FCC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				534F72931F5A49AB00CC3FCC /* PBXTargetDependency */,
+			);
+			name = Audy;
+			productName = Audy;
+			productReference = 536ECCEE1F54E03B00B16E47 /* Audy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		536ECCE61F54E03B00B16E47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sammy Yousif";
+				TargetAttributes = {
+					534F72771F5A49AB00CC3FCC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5E7D5R7C83;
+						ProvisioningStyle = Automatic;
+					};
+					534F72831F5A49AB00CC3FCC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5E7D5R7C83;
+						ProvisioningStyle = Automatic;
+					};
+					536ECCED1F54E03B00B16E47 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5E7D5R7C83;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 536ECCE91F54E03B00B16E47 /* Build configuration list for PBXProject "Audy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 536ECCE51F54E03B00B16E47;
+			productRefGroup = 536ECCEF1F54E03B00B16E47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				536ECCED1F54E03B00B16E47 /* Audy */,
+				534F72771F5A49AB00CC3FCC /* Watch */,
+				534F72831F5A49AB00CC3FCC /* Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		534F72761F5A49AB00CC3FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534F727E1F5A49AB00CC3FCC /* Assets.xcassets in Resources */,
+				534F727C1F5A49AB00CC3FCC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		534F72821F5A49AB00CC3FCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534F72901F5A49AB00CC3FCC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536ECCEC1F54E03B00B16E47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536ECCFC1F54E03B00B16E47 /* LaunchScreen.storyboard in Resources */,
+				536ECCF91F54E03B00B16E47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08E835044F9FD4F493F2B0FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-watchOS/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		192C713C9EE7C09659BC49DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		630F86E6DDE5E3029FCBEA15 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Watch Extension/Pods-Watch Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		953B3C3AC620FB48A29B8661 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audy/Pods-Audy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD561A5E894B72372AB65E28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Audy/Pods-Audy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage-iOS/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audy/Pods-Audy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0A3FB4241DC4876B532F0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		534F72801F5A49AB00CC3FCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				534F728C1F5A49AB00CC3FCC /* ExtensionDelegate.swift in Sources */,
+				534F728A1F5A49AB00CC3FCC /* InterfaceController.swift in Sources */,
+				534B98041F5A9F2700894519 /* WatchManager.swift in Sources */,
+				53F54CCE1F5A81CF00972211 /* MusicLibrary.swift in Sources */,
+				53B3F2771F5A54DE007F14A9 /* LibraryInterfaceController.swift in Sources */,
+				534F728E1F5A49AB00CC3FCC /* ComplicationController.swift in Sources */,
+				53B3F2791F5A55E8007F14A9 /* NavigationRow.swift in Sources */,
+				53F54CD21F5A8BD300972211 /* TrackRow.swift in Sources */,
+				53B3F27C1F5A603C007F14A9 /* Track.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536ECCEA1F54E03B00B16E47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53B810C51F572DF8000DC4E4 /* Soundcloud.swift in Sources */,
+				530E0B081F596E7400764A36 /* PlayButton.swift in Sources */,
+				530E0B061F59669800764A36 /* Extensions+AVPlayer.swift in Sources */,
+				536CB5231F58C8830089E0A3 /* MusicLibrary.swift in Sources */,
+				536ECCF41F54E03B00B16E47 /* AccountsController.swift in Sources */,
+				5396F1481F57EF2600DD105E /* LibraryController.swift in Sources */,
+				536ECCF21F54E03B00B16E47 /* AppDelegate.swift in Sources */,
+				5396F1461F57ECC300DD105E /* RootController.swift in Sources */,
+				53B810CB1F573CB9000DC4E4 /* Extensions+URL.swift in Sources */,
+				53C122BE1F566D9F001EADB1 /* PageController.swift in Sources */,
+				5396F1431F57A46A00DD105E /* Spotify.swift in Sources */,
+				5396F1381F577F5B00DD105E /* SoundcloudLoginController.swift in Sources */,
+				5396F1361F5776AE00DD105E /* NavigationController.swift in Sources */,
+				53C122C21F5670D9001EADB1 /* LoginButton.swift in Sources */,
+				53F54CD01F5A871100972211 /* WatchManager.swift in Sources */,
+				53C122C41F567674001EADB1 /* Constants.swift in Sources */,
+				5396F13A1F578B2800DD105E /* SoundcloudLoginButton.swift in Sources */,
+				530E0B021F5905B600764A36 /* PlayerController.swift in Sources */,
+				530E0B041F590B0700764A36 /* Player.swift in Sources */,
+				530E0B001F58F16A00764A36 /* TrackCell.swift in Sources */,
+				53B3F27B1F5A603C007F14A9 /* Track.swift in Sources */,
+				53DEACDD20AD8CA400599FB7 /* Secrets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		534F72871F5A49AB00CC3FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 534F72831F5A49AB00CC3FCC /* Watch Extension */;
+			targetProxy = 534F72861F5A49AB00CC3FCC /* PBXContainerItemProxy */;
+		};
+		534F72931F5A49AB00CC3FCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 534F72771F5A49AB00CC3FCC /* Watch */;
+			targetProxy = 534F72921F5A49AB00CC3FCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		534F727A1F5A49AB00CC3FCC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				534F727B1F5A49AB00CC3FCC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		536ECCFA1F54E03B00B16E47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				536ECCFB1F54E03B00B16E47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		534F72951F5A49AB00CC3FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5E7D5R7C83;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = me.syousif.Audy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		534F72961F5A49AB00CC3FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5E7D5R7C83;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = me.syousif.Audy.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		534F72971F5A49AB00CC3FCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DA6E6D8A251E8BD024679B /* Pods-Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5E7D5R7C83;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.syousif.Audy.watchkitapp.Audy;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		534F72981F5A49AB00CC3FCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C2725BF563E011822EA979 /* Pods-Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5E7D5R7C83;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.syousif.Audy.watchkitapp.Audy;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		536ECCFE1F54E03B00B16E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		536ECCFF1F54E03B00B16E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		536ECD011F54E03B00B16E47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BECA3B7C53FA26670E8F3605 /* Pods-Audy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5E7D5R7C83;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Audy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.syousif.Audy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Audy/Audy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		536ECD021F54E03B00B16E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C774ECE3F3B7340570EACB /* Pods-Audy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5E7D5R7C83;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Audy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.syousif.Audy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Audy/Audy-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		534F72991F5A49AB00CC3FCC /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534F72971F5A49AB00CC3FCC /* Debug */,
+				534F72981F5A49AB00CC3FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		534F729B1F5A49AB00CC3FCC /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534F72951F5A49AB00CC3FCC /* Debug */,
+				534F72961F5A49AB00CC3FCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536ECCE91F54E03B00B16E47 /* Build configuration list for PBXProject "Audy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536ECCFE1F54E03B00B16E47 /* Debug */,
+				536ECCFF1F54E03B00B16E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536ECD001F54E03B00B16E47 /* Build configuration list for PBXNativeTarget "Audy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536ECD011F54E03B00B16E47 /* Debug */,
+				536ECD021F54E03B00B16E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 536ECCE61F54E03B00B16E47 /* Project object */;
+}
